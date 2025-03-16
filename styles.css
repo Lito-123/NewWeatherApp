@@ -1,0 +1,104 @@
+
+@import url('https://developer.apple.com/fonts/SF-Pro/SF-Pro.css');
+
+body {
+    background: linear-gradient(135deg, #E8F0FF 0%, #F5E6FF 100%);
+    margin: 0;
+    padding: 0;
+}
+
+.weather-container {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 1rem;
+    background: rgba(255, 255, 255, 0.95);
+    font-family: "SF Pro Text", -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
+    min-height: 100vh;
+}
+
+.search-container {
+    display: flex;
+    gap: 0.5rem;
+    margin: 1rem 0 2rem;
+    padding: 0 1rem;
+}
+
+.location-input {
+    flex: 1;
+    padding: 0.8rem 1rem;
+    border: none;
+    border-radius: 10px;
+    background: rgba(118, 118, 128, 0.12);
+    font-size: 17px;
+    font-family: "SF Pro Text", system-ui, sans-serif;
+    color: #000000;
+}
+
+.location-input:focus {
+    outline: none;
+    background: rgba(118, 118, 128, 0.24);
+}
+
+.search-button {
+    background: #007AFF;
+    border: none;
+    border-radius: 10px;
+    padding: 0.8rem;
+    color: white;
+    cursor: pointer;
+    transition: opacity 0.2s;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.search-button:active {
+    opacity: 0.7;
+}
+
+.icon {
+    width: 24px;
+    height: 24px;
+}
+
+.icon.large {
+    width: 48px;
+    height: 48px;
+}
+
+.weather-info {
+    padding: 0 1rem;
+}
+
+.temperature {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-size: 96px;
+    line-height: 1;
+    font-weight: 200;
+    color: #000000;
+    margin-bottom: 2rem;
+}
+
+.photo-score {
+    display: flex;
+    gap: 1rem;
+    align-items: flex-start;
+    margin-bottom: 2rem;
+}
+
+.score-details {
+    flex: 1;
+}
+
+.weather-details {
+    font-size: 17px;
+    color: #1c1c1e;
+    line-height: 1.5;
+}
+
+.loading {
+    text-align: center;
+    padding: 2rem;
+    font-size: 17px;
+    color: #1c1c1e;
+}
